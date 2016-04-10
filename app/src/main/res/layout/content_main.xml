@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="se.bolzyk.gethealthy.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/main_vertical_xx_margin"
+        android:paddingBottom="@dimen/main_vertical_x_margin">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/class_process_header"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_marginLeft="@dimen/main_horizontal_margin"
+            android:layout_marginRight="@dimen/main_horizontal_margin"
+            android:layout_marginBottom="@dimen/main_vertical_small_margin"
+            android:layout_marginTop="@dimen/main_vertical_margin"
+            android:id="@+id/process_header"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+            <me.itangqi.waveloadingview.WaveLoadingView
+                android:id="@+id/waveLoadingView1"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                app:wlv_borderColor="@color/colorAccent"
+                app:wlv_borderWidth="4dp"
+                app:wlv_shapeType="circle"
+                app:wlv_titleBottomColor="@color/colorPrimaryText"
+                app:wlv_titleBottomSize="@dimen/activity_text_small"
+                app:wlv_titleCenter="@string/walking"
+                app:wlv_titleCenterColor="@color/colorPrimaryText"
+                app:wlv_titleCenterSize="@dimen/activity_text_middle"
+                app:wlv_waveColor="@color/colorAccent"
+                android:layout_weight="0.5"
+                android:layout_marginBottom="@dimen/main_vertical_small_margin"
+                android:layout_marginLeft="@dimen/main_horizontal_margin"
+                android:layout_marginRight="@dimen/main_horizontal_small_margin"
+                android:layout_marginTop="@dimen/main_vertical_margin"/>
+
+            <me.itangqi.waveloadingview.WaveLoadingView
+                android:id="@+id/waveLoadingView2"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                app:wlv_borderColor="@color/colorAccent"
+                app:wlv_borderWidth="4dp"
+                app:wlv_shapeType="circle"
+                app:wlv_titleBottomColor="@color/colorPrimaryText"
+                app:wlv_titleBottomSize="@dimen/activity_text_small"
+                app:wlv_titleCenter="@string/running"
+                app:wlv_titleCenterColor="@color/colorPrimaryText"
+                app:wlv_titleCenterSize="@dimen/activity_text_middle"
+                app:wlv_waveColor="@color/colorAccent"
+                android:layout_weight="0.5"
+                android:layout_marginBottom="@dimen/main_vertical_small_margin"
+                android:layout_marginLeft="@dimen/main_horizontal_small_margin"
+                android:layout_marginRight="@dimen/main_horizontal_margin"
+                android:layout_marginTop="@dimen/main_vertical_margin"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+            <me.itangqi.waveloadingview.WaveLoadingView
+                android:id="@+id/waveLoadingView3"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                app:wlv_borderColor="@color/colorAccent"
+                app:wlv_borderWidth="4dp"
+                app:wlv_shapeType="circle"
+                app:wlv_titleBottomColor="@color/colorPrimaryText"
+                app:wlv_titleBottomSize="@dimen/activity_text_small"
+                app:wlv_titleCenter="@string/weight_training"
+                app:wlv_titleCenterColor="@color/colorPrimaryText"
+                app:wlv_titleCenterSize="@dimen/activity_text_middle"
+                app:wlv_waveColor="@color/colorAccent"
+                android:layout_weight="0.5"
+                android:layout_marginBottom="@dimen/main_vertical_margin"
+                android:layout_marginLeft="@dimen/main_horizontal_margin"
+                android:layout_marginRight="@dimen/main_horizontal_small_margin"
+                android:layout_marginTop="@dimen/main_vertical_small_margin"/>
+
+            <me.itangqi.waveloadingview.WaveLoadingView
+                android:id="@+id/waveLoadingView4"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                app:wlv_borderColor="@color/colorAccent"
+                app:wlv_borderWidth="4dp"
+                app:wlv_shapeType="circle"
+                app:wlv_titleBottomColor="@color/colorPrimaryText"
+                app:wlv_titleBottomSize="@dimen/activity_text_small"
+                app:wlv_titleCenter="@string/group_training"
+                app:wlv_titleCenterColor="@color/colorPrimaryText"
+                app:wlv_titleCenterSize="@dimen/activity_text_middle"
+                app:wlv_waveColor="@color/colorAccent"
+                android:layout_weight="0.5"
+                android:layout_marginBottom="@dimen/main_vertical_margin"
+                android:layout_marginLeft="@dimen/main_horizontal_small_margin"
+                android:layout_marginRight="@dimen/main_horizontal_margin"
+                android:layout_marginTop="@dimen/main_vertical_small_margin"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

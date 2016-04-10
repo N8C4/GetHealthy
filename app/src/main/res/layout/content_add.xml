@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="se.bolzyk.gethealthy.AddActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/main_vertical_big_margin"
+        android:paddingBottom="100dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/chooseAct"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/activity_spinner_text"
+            android:layout_marginLeft="@dimen/main_horizontal_margin"
+            android:layout_marginRight="@dimen/main_horizontal_margin"/>
+
+        <Spinner
+            android:id="@+id/activity_spinner"
+            android:layout_marginTop="@dimen/main_vertical_big_margin"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/main_horizontal_margin"
+            android:layout_marginRight="@dimen/main_horizontal_margin"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/chooseTim"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/time_spinner_text"
+            android:layout_marginTop="@dimen/main_vertical_x_margin"
+            android:layout_marginLeft="@dimen/main_horizontal_margin"
+            android:layout_marginRight="@dimen/main_horizontal_margin"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/main_horizontal_margin"
+            android:layout_marginRight="@dimen/main_horizontal_margin">
+
+            <Spinner
+                android:id="@+id/time_hour_spinner"
+                android:layout_marginTop="@dimen/main_vertical_big_margin"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_weight="0.5"/>
+
+            <Spinner
+                android:id="@+id/time_min_spinner"
+                android:layout_marginTop="@dimen/main_vertical_big_margin"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_weight="0.5"/>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/chooseDat"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/activity_date"
+            android:layout_marginTop="@dimen/main_vertical_x_margin"
+            android:layout_marginLeft="@dimen/main_horizontal_margin"
+            android:layout_marginRight="@dimen/main_horizontal_margin"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:onClick="setDate"
+            android:layout_marginTop="@dimen/main_vertical_margin"
+            android:layout_marginLeft="@dimen/main_horizontal_margin"
+            android:layout_marginRight="@dimen/main_horizontal_margin">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/date_view_set"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_weight="0.5"/>
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/date_selected"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_weight="0.5"/>
+
+        </LinearLayout>
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:text="@string/save_activity"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_weight="1"
+            android:id="@+id/saveActivity"
+            android:layout_marginTop="@dimen/main_vertical_x_margin"
+            android:layout_marginLeft="@dimen/main_horizontal_margin"
+            android:layout_marginRight="@dimen/main_horizontal_margin"/>
+
+    </LinearLayout>
+</ScrollView>
