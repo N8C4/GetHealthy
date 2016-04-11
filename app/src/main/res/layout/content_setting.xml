@@ -24,7 +24,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/chooseAct"
+            android:text="@string/class_setting_activity"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:id="@+id/activity_spinner_text"
             android:layout_marginTop="@dimen/main_vertical_x_margin"
@@ -43,7 +43,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/chooseTim"
+            android:text="@string/class_setting_time"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:id="@+id/time_spinner_text"
             android:layout_marginTop="@dimen/main_vertical_x_margin"
@@ -85,7 +85,7 @@
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/save_activity"
+                android:text="@string/class_setting_button"
                 android:layout_weight="0.4"
                 style="?android:attr/buttonBarButtonStyle"
                 android:id="@+id/saveGoal"

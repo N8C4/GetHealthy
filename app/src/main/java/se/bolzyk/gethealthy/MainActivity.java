@@ -309,10 +309,19 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         //alertDialogBuilder.setMessage(R.string.class_process_popup_main);
-        alertDialogBuilder.setNeutralButton("Close", new DialogInterface.OnClickListener() {
+        alertDialogBuilder.setNegativeButton("Close", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface arg0, int arg1) {
                 closeContextMenu();
+            }
+        });
+        //alertDialogBuilder.setMessage(R.string.class_process_popup_main);
+        alertDialogBuilder.setPositiveButton("Add activity", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface arg0, int arg1) {
+                closeContextMenu();
+                Intent intent = new Intent(getBaseContext(), AddActivity.class);
+                startActivity(intent);
             }
         });
         AlertDialog alertDialog = alertDialogBuilder.create();

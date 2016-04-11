@@ -6,24 +6,59 @@
     xmlns:map="http://schemas.android.com/tools"
     android:id="@+id/layout">
 
-    <fragment
-        android:id="@+id/map"
-        class="com.google.android.gms.maps.SupportMapFragment"
-        xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        map:cameraBearing="112.5"
-        map:cameraTargetLat="63.8166891"
-        map:cameraTargetLng="20.312747"
-        map:cameraTilt="40"
-        map:cameraZoom="13"
-        map:mapType="normal"
-        map:uiCompass="false"
-        map:uiRotateGestures="true"
-        map:uiScrollGestures="false"
-        map:uiTiltGestures="true"
-        map:uiZoomControls="false"
-        map:uiZoomGestures="true" />
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/start_position"
+                android:layout_weight="0.5"
+                style="?android:attr/buttonBarButtonStyle"
+                android:id="@+id/startPosition" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/stop_position"
+                android:layout_weight="0.5"
+                style="?android:attr/buttonBarButtonStyle"
+                android:id="@+id/stopPosition" />
+
+        </LinearLayout>
+
+        <fragment
+            android:id="@+id/map"
+            class="com.google.android.gms.maps.SupportMapFragment"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            map:cameraBearing="112.5"
+            map:cameraTargetLat="63.8166891"
+            map:cameraTargetLng="20.312747"
+            map:cameraTilt="40"
+            map:cameraZoom="13"
+            map:mapType="normal"
+            map:uiCompass="false"
+            map:uiRotateGestures="true"
+            map:uiScrollGestures="false"
+            map:uiTiltGestures="true"
+            map:uiZoomControls="false"
+            map:uiZoomGestures="true" />
+
+    </LinearLayout>
+
 
 
     <android.support.design.widget.FloatingActionButton

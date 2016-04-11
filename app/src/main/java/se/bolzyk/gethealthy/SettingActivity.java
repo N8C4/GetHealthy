@@ -29,10 +29,8 @@ public class SettingActivity extends AppCompatActivity {
         hourSpinner = setSpinner(R.id.time_hour_spinner, R.array.spinner_time_hours_array_goal);
         minSpinner = setSpinner(R.id.time_min_spinner, R.array.spinner_time_min_array_goal);
 
-        // This is a button to add content
         final Button saveGoal = (Button) findViewById(R.id.saveGoal);
         setSaveButton(saveGoal);
-        // This is a button to add content
         final Button showsGoal = (Button) findViewById(R.id.showGoal);
         setShowButton(showsGoal);
     }
